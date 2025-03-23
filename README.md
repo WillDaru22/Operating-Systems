@@ -4,5 +4,8 @@ Projects relating to CS537: Intro to  Operating Systems (Spring 2020) at Univers
 Memory protection and page allocation  
 [Project 3 xv6 Memory sub-system](https://pages.cs.wisc.edu/~shivaram/cs537-sp20/p3.html)
 
-MapReduce Algorithm
+MapReduce Algorithm  
 [Project 4 MapReduce](https://pages.cs.wisc.edu/~shivaram/cs537-sp20/p4a.html)
+
+File System Checking  
+[Project 5 File System Checker](https://pages.cs.wisc.edu/~shivaram/cs537-sp20/p5.html)
