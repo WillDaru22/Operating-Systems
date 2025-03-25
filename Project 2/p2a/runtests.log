@@ -1,0 +1,306 @@
+starting build
+
+**********************************************************************
+
+Test build
+compile smash.c
+
+**********************************************************************
+gcc smash.c -o smash
+
+
+test build PASSED (5 of 5)
+ (compile smash.c)
+
+starting cd
+
+**********************************************************************
+
+Test cd
+cd with argument, and cd without argument
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+
+
+test cd PASSED (10 of 10)
+ (cd with argument, and cd without argument)
+
+starting badcd
+
+**********************************************************************
+
+Test badcd
+cd to a bad directory
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+starting exec
+
+**********************************************************************
+
+Test exec
+path should be /bin
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+starting badexec
+
+**********************************************************************
+
+Test badexec
+run programs that do not exist in /bin
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+
+
+test badexec PASSED (5 of 5)
+ (run programs that do not exist in /bin)
+
+starting path
+
+**********************************************************************
+
+Test path
+run path and a program that exists in a given path
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+Failure: ./smash gave incorrect standard output.
+Expected: "smash> smash> Too many arguments\nsmash>"Got:      "smash> smash> smash>"
+
+
+test path FAILED (0 of 5)
+ (run path and a program that exists in a given path)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/path/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/path
+ to compare your output with reference outputs. 
+
+starting path2
+
+**********************************************************************
+
+Test path2
+run path with a long pathname and many different paths
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+
+
+test path2 PASSED (5 of 5)
+ (run path with a long pathname and many different paths)
+
+starting line
+
+**********************************************************************
+
+Test line
+line with maximum allowed length
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+
+
+test line PASSED (5 of 5)
+ (line with maximum allowed length)
+
+starting whitespace
+
+**********************************************************************
+
+Test whitespace
+leading and trailing whitespace, full whitespaces or empty string
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+starting rdr
+
+**********************************************************************
+
+Test rdr
+simple redirection with no standard error
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+Failure: ./smash gave incorrect standard error.
+Expected: ""Got:      "uname: extra operand \342\200\230>\342\200\231\nTry 'uname --help' for more information."
+
+
+test rdr FAILED (0 of 10)
+ (simple redirection with no standard error)
+ ./smash gave incorrect standard error.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/rdr/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/rdr
+ to compare your output with reference outputs. 
+
+starting rdr2
+
+**********************************************************************
+
+Test rdr2
+simple redirection with standard error
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+Failure: ./smash gave incorrect standard error.
+Expected: ""Got:      "ls: cannot access '/bad/': No such file or directory\nls: cannot access '>': No such file or directory\nls: cannot access 'outputfile': No such file or directory"
+
+
+test rdr2 FAILED (0 of 5)
+ (simple redirection with standard error)
+ ./smash gave incorrect standard error.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/rdr2/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/rdr2
+ to compare your output with reference outputs. 
+
+starting par
+
+**********************************************************************
+
+Test par
+running commands in parallel
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+Failure: ./smash gave incorrect standard output.
+Expected: "smash> hi\nsmash>"Got:      "smash> hi & ls > out\nsmash>"
+
+
+test par FAILED (0 of 5)
+ (running commands in parallel)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/par/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/par
+ to compare your output with reference outputs. 
+
+starting mul
+
+**********************************************************************
+
+Test mul
+running multiple commands at once
+
+**********************************************************************
+/tmp/tmpXT0vfJ/p/./smash
+Failure: ./smash gave incorrect standard output.
+Expected: "smash> hi\nhello\nhola\nsmash>"Got:      "smash> hi\nsmash>"
+
+
+test mul FAILED (0 of 5)
+ (running multiple commands at once)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/mul/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/mul
+ to compare your output with reference outputs. 
+
+**********************************************************************
+Summary:
+test build PASSED (5 of 5)
+ (compile smash.c)
+
+test cd PASSED (10 of 10)
+ (cd with argument, and cd without argument)
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+test badexec PASSED (5 of 5)
+ (run programs that do not exist in /bin)
+
+test path FAILED (0 of 5)
+ (run path and a program that exists in a given path)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/path/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/path
+ to compare your output with reference outputs. 
+
+test path2 PASSED (5 of 5)
+ (run path with a long pathname and many different paths)
+
+test line PASSED (5 of 5)
+ (line with maximum allowed length)
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+test rdr FAILED (0 of 10)
+ (simple redirection with no standard error)
+ ./smash gave incorrect standard error.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/rdr/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/rdr
+ to compare your output with reference outputs. 
+
+test rdr2 FAILED (0 of 5)
+ (simple redirection with standard error)
+ ./smash gave incorrect standard error.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/rdr2/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/rdr2
+ to compare your output with reference outputs. 
+
+test par FAILED (0 of 5)
+ (running commands in parallel)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/par/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/par
+ to compare your output with reference outputs. 
+
+test mul FAILED (0 of 5)
+ (running multiple commands at once)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/c/s/cs537-1/tests/p2a/mul/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/mul
+ to compare your output with reference outputs. 
+
+Passed 8 of 13 tests.
+Overall 8 of 13
+Points 45 of 75
